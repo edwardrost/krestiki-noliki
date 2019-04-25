@@ -1,10 +1,11 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  font: 14px "Roboto", Futura, sans-serif;
   margin: 20px;
 }
 
 ol, ul {
-  padding-left: 30px;
+  padding-left: 0px;
+  list-style-type: none;
 }
 
 .board-row:after {
@@ -42,9 +43,16 @@ ol, ul {
 
 .game {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.game-header {
+	padding: 15px 0;
+	font-size: 1rem;
+	font-weight: bold;
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-top: 15px;
 }
